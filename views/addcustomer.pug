@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title Add customer
+    link(
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    )
+  body
+    div.container
+        h1.bg-primary.text-white.text-center New customer
+        form(action='/addcustomer', method='POST')
+          div.div.mb-3
+            label.form-label Firstname
+            input(type="text", name="firstname").input.form-control
+          div.div.mb-3
+            label.form-label Lastname
+            input(type="text", name="lastname").input.form-control
+          div.div.mb-3
+            label.form-label Email
+            input(type="text", name="email").input.form-control
+          div.div.mb-3
+            label.form-label Phone
+            input(type="text", name="phone").input.form-control
+          div.d-flex.justify-content-center
+            input(type="submit", value="Add").btn.btn-primary
